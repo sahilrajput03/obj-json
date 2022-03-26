@@ -1,0 +1,29 @@
+#!/usr/bin/env node
+// file: to-json
+let readline = require('readline')
+let rl = readline.createInterface({
+	input: process.stdin,
+	output: process.stdout,
+	terminal: false,
+})
+
+rl.on('line', function (line) {
+	eval(`console.log(JSON.stringify(${line}))`)
+})
+
+/* Usage:
+
+TIP: Move the file to `~/.local/bin/` directory, we can use it as a cli tool.
+
+$ echo "{a: 10, b: 20, name: 'sahil'}" | to-json
+Output: {"a":10,"b":20,"name":"sahil"}
+
+FYI: NOW I CAN USE jq AS WELL:
+$ echo "{a: 10, b: 20, name: 'sahil'}" | to-json | jq
+Output:
+{
+  "a": 10,
+  "b": 20,
+  "name": "sahil"
+}
+*/
