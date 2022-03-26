@@ -5,13 +5,13 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"update": "git add . && git commit -m 'update' && npm version patch && git push"
+		"update": "git add . && git commit -m 'update' && npm version patch && npm publish && git push"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/sahilrajput03/to-json-npm.git"
 	},
-	"keywords": [],
+	"keywords": ["convert jso bject to json", "json from js object", "object to json", "javascript object to json"],
 	"author": "",
 	"license": "ISC",
 	"bugs": {
