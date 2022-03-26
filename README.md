@@ -2,6 +2,12 @@
 
 A tool to help you convert javascript object to json on command line.
 
+## Installation
+
+```bash
+npm i -g obj-json
+```
+
 ## Usage:
 
 ```bash
